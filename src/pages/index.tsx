@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Navigation from 'components/Navigation/Navigation';
+import Footer from 'components/Footer/Footer';
 
 export default function Home() {
   return (
@@ -19,9 +21,15 @@ export default function Home() {
         />
       </Head>
 
+      <Navigation />
+
       <main>
-        <h1 className='text-3xl font-bold underline'>Infraline</h1>
+        <div
+          className={`bg-[url('../assets/slider1.jpeg')] bg-no-repeat bg-center w-full h-96`}
+        ></div>
       </main>
+
+      {/* <Footer /> */}
     </>
   );
 }
