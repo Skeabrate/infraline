@@ -12,19 +12,21 @@ const Navigation = () => {
         <li>
           <p>
             <Link
-              className='flex items-center gap-2 text-sm text-slate-600 hover:underline'
+              className='flex items-center gap-2 text-sm text-red-900 hover:underline font-medium'
               href='mailto:biuro@infraline.pl'
             >
-              <EmailSvg /> biuro@infraline.pl
+              <EmailSvg />
+              <span className='block animate-fadeInTop opacity-0'>biuro@infraline.pl</span>
             </Link>
           </p>
-          <p className='w-52 h-px bg-red-600 my-1'></p>
+          <p className='w-52 h-px bg-red-600 my-1 animate-scaleX origin-left opacity-0'></p>
           <p>
             <Link
-              className='flex items-center gap-2 text-sm text-slate-600 hover:underline'
+              className='flex items-center gap-2 text-sm text-red-900 hover:underline font-medium'
               href='tel:+48502135511'
             >
-              <TelephoneSvg /> +48 502 135 511
+              <TelephoneSvg />
+              <span className='block animate-fadeInBottom opacity-0'>+48 502 135 511</span>
             </Link>
           </p>
         </li>
@@ -36,7 +38,10 @@ const Navigation = () => {
         <li className='flex justify-end'>
           <Link
             href='https://www.infraline.pl/'
-            className='group relative rounded-tr-lg bg-red-700 py-2 w-52 font-bold text-white text-center before:absolute before:h-2/3 before:w-0.5 before:bg-red-600 before:-left-1 before:-bottom-1 after:absolute after:h-0.5 after:w-2/3 after:bg-red-600 after:-left-1 after:-bottom-1'
+            className={`group relative rounded-tr-lg bg-red-700 py-2 w-52 font-bold text-white text-center 
+							before:absolute before:h-2/3 before:w-0.5 before:bg-red-600 before:-left-1 before:-bottom-1 before:animate-scaleY before:opacity-0 before:origin-bottom
+							after:absolute after:h-0.5 after:w-2/3 after:bg-red-600 after:-left-1 after:-bottom-1 after:animate-scaleX after:opacity-0 after:origin-left
+						`}
           >
             <span className='block group-hover:-translate-x-3 transition-all duration-300'>
               Przejdź do naszej <br />

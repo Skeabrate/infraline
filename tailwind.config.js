@@ -6,6 +6,30 @@ module.exports = {
       backgroundImage: {
         slider1: "url('./src/assets/slider1.jpeg')",
       },
+      keyframes: {
+        fadeInTop: {
+          '0%': { opacity: '0', transform: 'translateY(-10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        fadeInBottom: {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        scaleX: {
+          '0%': { opacity: '0', transform: 'scaleX(0)' },
+          '100%': { opacity: '1', transform: 'scaleX(1)' },
+        },
+        scaleY: {
+          '0%': { opacity: '0', transform: 'scaleY(0)' },
+          '100%': { opacity: '1', transform: 'scaleY(1)' },
+        },
+      },
+      animation: {
+        fadeInTop: 'fadeInTop 0.6s 0.3s forwards',
+        fadeInBottom: 'fadeInBottom 0.6s 0.3s forwards',
+        scaleX: 'scaleX 0.6s 0.2s forwards',
+        scaleY: 'scaleY 0.6s 0.2s forwards',
+      },
     },
   },
   plugins: [],
