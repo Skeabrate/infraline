@@ -8,7 +8,7 @@ import ArrowSvg from 'assets/svg/ArrowSvg';
 const Navigation = () => {
   return (
     <nav className='border-t-4 border-orange-400'>
-      <ul className='max-w-7xl grid grid-cols-3 items-center mx-auto py-6 px-6'>
+      <ul className='max-w-7xl grid grid-cols-3 items-center mx-auto py-4 px-6'>
         <li>
           <p>
             <Link
@@ -18,7 +18,7 @@ const Navigation = () => {
               <EmailSvg /> biuro@infraline.pl
             </Link>
           </p>
-          <p className='w-52 h-px bg-orange-500 rounded-full my-2'></p>
+          <p className='w-52 h-px bg-orange-400 my-1'></p>
           <p>
             <Link
               className='flex items-center gap-2 text-sm text-slate-600 hover:underline'
@@ -29,7 +29,9 @@ const Navigation = () => {
           </p>
         </li>
         <li className='flex justify-center'>
-          <LogoSvg />
+          <Link href='https://www.infraline.pl/'>
+            <LogoSvg />
+          </Link>
         </li>
         <li className='flex justify-end'>
           <Link
