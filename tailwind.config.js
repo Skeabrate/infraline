@@ -16,12 +16,12 @@ module.exports = {
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         scaleX: {
-          '0%': { opacity: '0', transform: 'scaleX(0)' },
-          '100%': { opacity: '1', transform: 'scaleX(1)' },
+          '0%': { transform: 'scaleX(0)' },
+          '100%': { transform: 'scaleX(1)' },
         },
         scaleY: {
-          '0%': { opacity: '0', transform: 'scaleY(0)' },
-          '100%': { opacity: '1', transform: 'scaleY(1)' },
+          '0%': { transform: 'scaleY(0)' },
+          '100%': { transform: 'scaleY(1)' },
         },
       },
       animation: {
