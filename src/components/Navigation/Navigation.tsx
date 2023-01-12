@@ -17,17 +17,17 @@ const Navigation = () => {
         <li className='flex justify-center gap-8 mt-6 row-start-3 md:flex-col md:gap-0 md:row-start-1 md:mt-0'>
           <p>
             <Link
-              className='flex items-center gap-2 text-sm text-red-900 hover:underline font-medium'
+              className='flex items-center gap-2 text-sm text-red-900 hover:text-red-700 transition-all duration-150 font-medium'
               href='mailto:biuro@infraline.pl'
             >
               <EmailSvg />
               <span className='block md:animate-fadeInTop md:opacity-0'>biuro@infraline.pl</span>
             </Link>
           </p>
-          <p className='hidden w-52 h-px bg-red-600 my-1 animate-scaleX origin-left scale-x-0 md:block'></p>
+          <p className='hidden w-52 h-px bg-red-700 my-1 animate-scaleX origin-left scale-x-0 md:block'></p>
           <p>
             <Link
-              className='flex items-center gap-2 text-sm text-red-900 hover:underline font-medium'
+              className='flex items-center gap-2 text-sm text-red-900 hover:text-red-700 transition-all duration-150 font-medium'
               href='tel:+48502135511'
             >
               <TelephoneSvg />
