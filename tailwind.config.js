@@ -3,9 +3,6 @@ module.exports = {
   content: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      backgroundImage: {
-        slider1: "url('./src/assets/slider1.jpeg')",
-      },
       keyframes: {
         fadeInTop: {
           '0%': { opacity: '0', transform: 'translateY(-10px)' },

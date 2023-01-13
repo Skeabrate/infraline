@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Navigation from 'components/Navigation/Navigation';
 import Footer from 'components/Footer/Footer';
+import Slider from 'components/Slider/Slider';
 
 export default function Home() {
   return (
@@ -24,9 +25,7 @@ export default function Home() {
       <Navigation />
 
       <main>
-        <div
-          className={`bg-[url('../assets/slider1.jpeg')] bg-no-repeat bg-center w-full h-96`}
-        ></div>
+        <Slider />
       </main>
 
       {/* <Footer /> */}
