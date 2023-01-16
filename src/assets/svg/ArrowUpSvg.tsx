@@ -6,8 +6,8 @@ const ArrowUpSvg = () => {
       width='16'
       height='16'
       viewBox='0 0 24 24'
-      fill-rule='evenodd'
-      clip-rule='evenodd'
+      fillRule='evenodd'
+      clipRule='evenodd'
     >
       <path
         fill='#6b7280'

@@ -1,10 +1,17 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import Image from 'next/image';
 import OfertaImg from 'assets/oferta.jpg';
-import { WrapperStyles, HeaderStyles } from 'styles/globals.styles';
-import Navigation from 'components/Navigation/Navigation';
-import Footer from 'components/Footer/Footer';
-import Slider from 'components/Slider/Slider';
+import FinskieImg from 'assets/finskie.jpg';
+import InfraredImg from 'assets/infrared.jpg';
+import CombiImg from 'assets/combi.jpg';
+import AranzacjeImg from 'assets/aranzacjesolne.jpg';
+import OgrodoweImg from 'assets/ogrodowe.jpg';
+import WyposazenieDodatkoweImg from 'assets/wyposazeniedodatkowe.jpg';
+import Navigation from 'components/Navigation';
+import Footer from 'components/Footer';
+import Slider from 'components/Slider';
+import ImageWithOrnament from 'components/ImageWithOrnament';
 
 export default function Home() {
   return (
@@ -30,10 +37,10 @@ export default function Home() {
       <main>
         <Slider />
 
-        <div className={`${WrapperStyles} mt-4 md:mt-12 lg:mt-16`}>
+        <div className='max-w-6xl mx-auto px-4 md:px-6 mt-4 md:mt-12 lg:mt-16'>
           <section className='grid md:grid-cols-2 gap-6 lg:gap-10'>
             <div>
-              <h1 className={`${HeaderStyles} mb-2 lg:mb-6`}>
+              <h1 className='text-2xl font-bold lg:text-3xl mb-2 lg:mb-6'>
                 Polski producent saun Infraline od prawie 20 lat.
               </h1>
 
@@ -60,16 +67,49 @@ export default function Home() {
             />
           </section>
 
+          <Link href='https://www.infraline.pl/'>Sprawdź naszą oficjalną stronę</Link>
+
           <section className='mt-6 md:mt-12 lg:mt-16'>
-            <h2 className={`${HeaderStyles} text-center lg:mb-2`}>Oferta:</h2>
+            <h2 className='text-2xl font-bold lg:text-3xl text-center lg:mb-2'>Oferta:</h2>
             <h3 className='text-center'>W naszej bogatej ofercie posiadamy:</h3>
-            <ul>
-              <li>sauny fińskie</li>
-              <li>sauny Infrared</li>
-              <li>sauny combi</li>
-              <li>sauny ogrodowe</li>
-              <li>łaźnie parowe</li>
-              <li>oraz szeroką gamę akcesoriów do saun</li>
+            <ul className='grid [@media(min-width:440px)]:grid-cols-2 [@media(min-width:768px)]:grid-cols-3 gap-x-6 gap-y-8 md:gap-x-8 md:gap-y-12 mt-4 md:mt-8 '>
+              {[
+                {
+                  title: 'Sauny Fińskie',
+                  src: FinskieImg,
+                },
+                {
+                  title: 'Sauny Infrared',
+                  src: InfraredImg,
+                },
+                {
+                  title: 'Sauny Combi',
+                  src: CombiImg,
+                },
+                {
+                  title: 'Aranżacje Solne',
+                  src: AranzacjeImg,
+                },
+                {
+                  title: 'Sauny Ogrodowe',
+                  src: OgrodoweImg,
+                },
+                {
+                  title: 'Wyposażenie do saun',
+                  src: WyposazenieDodatkoweImg,
+                },
+              ].map(({ title, src }) => (
+                <li
+                  key={title}
+                  className='relative'
+                >
+                  <ImageWithOrnament
+                    src={src}
+                    title={title}
+                  />
+                  <h4 className='font-bold absolute bottom-0 left-0'>{title}</h4>
+                </li>
+              ))}
             </ul>
           </section>
         </div>
