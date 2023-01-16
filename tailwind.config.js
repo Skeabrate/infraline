@@ -16,16 +16,16 @@ module.exports = {
           '0%': { transform: 'scaleX(0)' },
           '100%': { transform: 'scaleX(1)' },
         },
-        scaleY: {
-          '0%': { transform: 'scaleY(0)' },
-          '100%': { transform: 'scaleY(1)' },
+        highlight: {
+          '0%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(1.025)' },
         },
       },
       animation: {
         fadeInTop: 'fadeInTop 0.6s 0.3s forwards',
         fadeInBottom: 'fadeInBottom 0.6s 0.3s forwards',
         scaleX: 'scaleX 0.6s 0.2s forwards',
-        scaleY: 'scaleY 0.6s 0.2s forwards',
+        highlight: 'highlight 0.6s infinite alternate',
       },
     },
   },

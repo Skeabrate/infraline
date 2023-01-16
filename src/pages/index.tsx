@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import Image from 'next/image';
 import OfertaImg from 'assets/oferta.jpg';
 import FinskieImg from 'assets/finskie.jpg';
@@ -12,6 +11,7 @@ import Navigation from 'components/Navigation';
 import Footer from 'components/Footer';
 import Slider from 'components/Slider';
 import ImageWithOrnament from 'components/ImageWithOrnament';
+import { GoToOfficialPageFromContent } from 'components/GoToOfficialPage';
 
 export default function Home() {
   return (
@@ -67,7 +67,7 @@ export default function Home() {
             />
           </section>
 
-          <Link href='https://www.infraline.pl/'>Sprawdź naszą oficjalną stronę</Link>
+          <GoToOfficialPageFromContent />
 
           <section className='mt-6 md:mt-12 lg:mt-16'>
             <h2 className='text-2xl font-bold lg:text-3xl text-center lg:mb-2'>Oferta:</h2>
