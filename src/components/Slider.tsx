@@ -75,23 +75,21 @@ const sliderProps = {
 
 const Slider = () => {
   return (
-    <div className='slide-container'>
-      <Fade {...sliderProps}>
-        {slideImages.map(({ url, sliderText }, index) => (
+    <Fade {...sliderProps}>
+      {slideImages.map(({ url, sliderText }, index) => (
+        <div
+          className='each-slide w-screen'
+          key={index}
+        >
           <div
-            className='each-slide'
-            key={index}
+            className='w-full h-[250px] sm:h-[400px] md:h-[500px] lg:h-[60vh] lg:min-h-[500px] bg-orange-600 flex flex-col text-center items-center justify-center bg-no-repeat bg-center bg-cover'
+            style={{ backgroundImage: `url(${url})` }}
           >
-            <div
-              className='h-[250px] sm:h-[400px] md:h-[500px] lg:h-[60vh] lg:min-h-[500px] flex flex-col text-center items-center justify-center bg-no-repeat bg-center bg-cover'
-              style={{ backgroundImage: `url(${url})` }}
-            >
-              {sliderText}
-            </div>
+            {sliderText}
           </div>
-        ))}
-      </Fade>
-    </div>
+        </div>
+      ))}
+    </Fade>
   );
 };
 
