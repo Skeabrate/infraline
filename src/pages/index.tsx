@@ -30,19 +30,17 @@ export default function Home() {
 
         <div className={WrapperStyles}>
           <section>
-            <h2>Polski producent saun Infraline od prawie 20 lat.</h2>
+            <h2 className='text-4xl'>Polski producent saun Infraline od prawie 20 lat.</h2>
 
             <p>
               Zajmujemy się projektowaniem, doradztwem, a następnie produkcją i montażem saun
               Infraline, dostosowanych do oczekiwań i pomieszczeń naszych Klientów.
             </p>
-          </section>
 
-          <section>
-            <h3>
+            <p>
               Bezpieczeństwo użytkowania saun marki Infraline zapewniają dodatkowo unijne
               certyfikaty: TUV/GS i CE.
-            </h3>
+            </p>
 
             <p>
               Od początku naszej działalności współpracujemy z profesjonalnymi europejskimi
@@ -52,8 +50,8 @@ export default function Home() {
           </section>
 
           <section>
-            <h2>Oferta:</h2>
-            <p>W naszej bogatej ofercie posiadamy:</p>
+            <h2 className='text-4xl'>Oferta:</h2>
+            <h3>W naszej bogatej ofercie posiadamy:</h3>
             <ul>
               <li>sauny fińskie</li>
               <li>sauny Infrared</li>
