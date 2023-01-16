@@ -30,7 +30,7 @@ module.exports = {
         fadeInBottom: 'fadeInBottom 0.6s 0.3s forwards',
         scaleX: 'scaleX 0.6s 0.2s forwards',
         hide: 'hide 0.5s 0.1s forwards',
-        reveal: 'reveal 0.3s 0.45s forwards',
+        reveal: 'reveal 0.3s 0.5s forwards',
       },
     },
   },
