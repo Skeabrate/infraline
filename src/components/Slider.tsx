@@ -34,7 +34,7 @@ const slideImages = [
     sliderText: (
       <SliderText
         heading='Lider wśród producentów saun'
-        captions='Niemal 20 lat na rynku europejski'
+        captions='Niemal 20 lat na rynku europejskim'
       />
     ),
   },
