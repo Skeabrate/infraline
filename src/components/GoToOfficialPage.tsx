@@ -26,10 +26,18 @@ export const GoToOfficialPageFromNav = () => {
 export const GoToOfficialPageFromContent = () => {
   return (
     <Link
-      className='flex w-fit mx-auto my-10 sm:my-16 p-6 bg-gradient-to-bl from-red-500 to-red-700 font-bold text-white text-center animate-highlight hover:animation-pause'
+      className='group flex w-fit mx-auto my-10 sm:my-16 p-4 bg-gradient-to-bl from-red-500 to-red-700 font-bold text-white text-center'
       href='https://www.infraline.pl'
     >
-      <span>Sprawdź naszą oficjalną stronę</span>
+      <div className='overflow-hidden relative flex items-center justify-center w-80 h-16'>
+        <span className='absolute flex items-center h-full group-hover:animate-hide'>
+          Sprawdź naszą oficjalną stronę
+        </span>
+
+        <span className='block scale-50 opacity-0 group-hover:animate-reveal'>
+          <LogoWhiteSvg />
+        </span>
+      </div>
     </Link>
   );
 };
