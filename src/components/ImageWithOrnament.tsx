@@ -10,7 +10,7 @@ const ImageWithOrnament = ({ src, title }: { src: StaticImageData; title: string
         style={{
           width: '100%',
           objectFit: 'cover',
-          scale: '0.9',
+          scale: '0.92',
           position: 'relative',
           zIndex: '1',
           transformOrigin: 'top left',
