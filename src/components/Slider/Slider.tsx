@@ -1,6 +1,8 @@
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
+import SliderArrowLeftSvg from 'assets/svg/SliderArrowLeftSvg';
+import SliderArrowRightSvg from 'assets/svg/SliderArrowRightSVg';
 
 type TText = string | React.ReactNode;
 
@@ -61,40 +63,12 @@ const sliderProps = {
   indicators: true,
   prevArrow: (
     <button className='hidden sm:flex group w-24 h-24 items-center justify-center'>
-      <svg
-        width='32'
-        height='32'
-        viewBox='0 0 14 20'
-        xmlns='http://www.w3.org/2000/svg'
-        className='group-hover:scale-110 transition-all duration-200'
-      >
-        <path
-          d='M11 1 3 9l8 8'
-          stroke='#ffffffea'
-          strokeWidth='3'
-          fill='none'
-          fillRule='evenodd'
-        />
-      </svg>
+      <SliderArrowLeftSvg />
     </button>
   ),
   nextArrow: (
     <button className='hidden sm:flex group w-24 h-24 items-center justify-center'>
-      <svg
-        width='32'
-        height='32'
-        viewBox='0 0 14 20'
-        xmlns='http://www.w3.org/2000/svg'
-        className='group-hover:scale-110 transition-all duration-200'
-      >
-        <path
-          d='m2 1 8 8-8 8'
-          stroke='#ffffffea'
-          strokeWidth='3'
-          fill='none'
-          fillRule='evenodd'
-        />
-      </svg>
+      <SliderArrowRightSvg />
     </button>
   ),
 };

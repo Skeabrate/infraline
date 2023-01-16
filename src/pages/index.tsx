@@ -28,7 +28,7 @@ export default function Home() {
         <Slider />
       </main>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
