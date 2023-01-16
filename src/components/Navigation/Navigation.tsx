@@ -4,6 +4,7 @@ import LogoSvg from 'assets/svg/LogoSvg';
 import TelephoneSvg from 'assets/svg/TelephoneSvg';
 import Link from 'next/link';
 import ArrowSvg from 'assets/svg/ArrowSvg';
+import { WrapperStyles } from 'styles/Wrapper.styles';
 
 const StyledLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
   return (
@@ -19,7 +20,9 @@ const StyledLink = ({ href, children }: { href: string; children: React.ReactNod
 const Navigation = () => {
   return (
     <nav className='border-t-4 border-red-700'>
-      <ul className='max-w-6xl grid grid-cols-1 items-center mx-auto pt-1 py-4 px-2 md:grid-cols-3 md:px-6 md:py-4'>
+      <ul
+        className={`${WrapperStyles} grid grid-cols-1 items-center pt-1 pb-4 px-2 md:grid-cols-3 md:py-4`}
+      >
         <li className='flex justify-center gap-8 mt-6 row-start-3 md:flex-col md:gap-0 md:row-start-1 md:mt-0'>
           <p>
             <StyledLink href='mailto:biuro@infraline.pl'>

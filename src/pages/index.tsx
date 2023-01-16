@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Navigation from 'components/Navigation/Navigation';
 import Footer from 'components/Footer/Footer';
 import Slider from 'components/Slider/Slider';
+import { WrapperStyles } from 'styles/Wrapper.styles';
 
 export default function Home() {
   return (
@@ -26,6 +27,43 @@ export default function Home() {
 
       <main>
         <Slider />
+
+        <div className={WrapperStyles}>
+          <section>
+            <h2>Polski producent saun Infraline od prawie 20 lat.</h2>
+
+            <p>
+              Zajmujemy się projektowaniem, doradztwem, a następnie produkcją i montażem saun
+              Infraline, dostosowanych do oczekiwań i pomieszczeń naszych Klientów.
+            </p>
+          </section>
+
+          <section>
+            <h3>
+              Bezpieczeństwo użytkowania saun marki Infraline zapewniają dodatkowo unijne
+              certyfikaty: TUV/GS i CE.
+            </h3>
+
+            <p>
+              Od początku naszej działalności współpracujemy z profesjonalnymi europejskimi
+              producentami systemów termicznych i materiałów do saun: EOS Saunatechnik GmbH, TPI
+              GmbH RIEGLERSTR, Saunalux GmbH Products & CO.KG, Harvia i Tylö.
+            </p>
+          </section>
+
+          <section>
+            <h2>Oferta:</h2>
+            <p>W naszej bogatej ofercie posiadamy:</p>
+            <ul>
+              <li>sauny fińskie</li>
+              <li>sauny Infrared</li>
+              <li>sauny combi</li>
+              <li>sauny ogrodowe</li>
+              <li>łaźnie parowe</li>
+              <li>oraz szeroką gamę akcesoriów do saun</li>
+            </ul>
+          </section>
+        </div>
       </main>
 
       <Footer />

@@ -1,6 +1,7 @@
 import React from 'react';
 import LogoGraySvg from 'assets/svg/LogoGraySvg';
 import ArrowUpSvg from 'assets/svg/ArrowUpSvg';
+import { WrapperStyles } from 'styles/Wrapper.styles';
 
 const Footer = () => {
   const scrollTopHandler = () =>
@@ -12,8 +13,10 @@ const Footer = () => {
     });
 
   return (
-    <footer className='max-w-6xl mx-auto px-2 pb-4 md:px-6 md:pb-6 mt-20 md:mt-32 text-stone-500 flex flex-col items-center text-center'>
-      <div className='w-full pb-4 border-t-[1px] border-stone-300' />
+    <footer
+      className={`${WrapperStyles} pb-4 md:pb-6 mt-20 md:mt-32 text-gray-400 flex flex-col items-center text-center`}
+    >
+      <div className='w-full pb-4 border-t-[1px] border-gray-300' />
       <LogoGraySvg />
       <p>&copy; {new Date().getFullYear()}. Wszelkie prawa zastrzeżone</p>
       <button
