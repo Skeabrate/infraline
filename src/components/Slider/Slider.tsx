@@ -2,7 +2,7 @@ import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import SliderArrowLeftSvg from 'assets/svg/SliderArrowLeftSvg';
-import SliderArrowRightSvg from 'assets/svg/SliderArrowRightSVg';
+import SliderArrowRightSvg from 'assets/svg/SliderArrowRightSvg';
 
 type TText = string | React.ReactNode;
 
