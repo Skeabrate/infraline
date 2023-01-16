@@ -1,8 +1,10 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import Navigation from 'components/Navigation/Navigation';
 import Footer from 'components/Footer/Footer';
 import Slider from 'components/Slider/Slider';
 import { WrapperStyles } from 'styles/Wrapper.styles';
+import OfertaImg from 'assets/oferta.jpg';
 
 export default function Home() {
   return (
@@ -28,25 +30,34 @@ export default function Home() {
       <main>
         <Slider />
 
-        <div className={WrapperStyles}>
-          <section>
-            <h2 className='text-4xl'>Polski producent saun Infraline od prawie 20 lat.</h2>
+        <div className={`${WrapperStyles} mt-4 md:mt-12 lg:mt-16`}>
+          <section className='grid md:grid-cols-2 gap-6 lg:gap-10'>
+            <div>
+              <h1 className='text-xl font-bold mb-2 lg:text-3xl lg:mb-6'>
+                Polski producent saun Infraline od prawie 20 lat.
+              </h1>
 
-            <p>
-              Zajmujemy się projektowaniem, doradztwem, a następnie produkcją i montażem saun
-              Infraline, dostosowanych do oczekiwań i pomieszczeń naszych Klientów.
-            </p>
+              <p className='mb-2'>
+                Zajmujemy się projektowaniem, doradztwem, a następnie produkcją i montażem saun
+                Infraline, dostosowanych do oczekiwań i pomieszczeń naszych Klientów.
+              </p>
 
-            <p>
-              Bezpieczeństwo użytkowania saun marki Infraline zapewniają dodatkowo unijne
-              certyfikaty: TUV/GS i CE.
-            </p>
+              <p className='mb-2'>
+                Bezpieczeństwo użytkowania saun marki Infraline zapewniają dodatkowo unijne
+                certyfikaty: <strong>TUV/GS i CE.</strong>
+              </p>
 
-            <p>
-              Od początku naszej działalności współpracujemy z profesjonalnymi europejskimi
-              producentami systemów termicznych i materiałów do saun: EOS Saunatechnik GmbH, TPI
-              GmbH RIEGLERSTR, Saunalux GmbH Products & CO.KG, Harvia i Tylö.
-            </p>
+              <p>
+                Od początku naszej działalności współpracujemy z profesjonalnymi europejskimi
+                producentami systemów termicznych i materiałów do saun: EOS Saunatechnik GmbH, TPI
+                GmbH RIEGLERSTR, Saunalux GmbH Products & CO.KG, Harvia i Tylö.
+              </p>
+            </div>
+
+            <Image
+              src={OfertaImg}
+              alt='sauna diamond Infraline'
+            />
           </section>
 
           <section>
