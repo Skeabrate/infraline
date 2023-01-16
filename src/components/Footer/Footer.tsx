@@ -1,7 +1,7 @@
 import React from 'react';
 import LogoGraySvg from 'assets/svg/LogoGraySvg';
 import ArrowUpSvg from 'assets/svg/ArrowUpSvg';
-import { WrapperStyles } from 'styles/Wrapper.styles';
+import { WrapperStyles } from 'styles/globals.styles';
 
 const Footer = () => {
   const scrollTopHandler = () =>

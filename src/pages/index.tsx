@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import OfertaImg from 'assets/oferta.jpg';
+import { WrapperStyles, HeaderStyles } from 'styles/globals.styles';
 import Navigation from 'components/Navigation/Navigation';
 import Footer from 'components/Footer/Footer';
 import Slider from 'components/Slider/Slider';
-import { WrapperStyles } from 'styles/Wrapper.styles';
-import OfertaImg from 'assets/oferta.jpg';
 
 export default function Home() {
   return (
@@ -33,7 +33,7 @@ export default function Home() {
         <div className={`${WrapperStyles} mt-4 md:mt-12 lg:mt-16`}>
           <section className='grid md:grid-cols-2 gap-6 lg:gap-10'>
             <div>
-              <h1 className='text-xl font-bold mb-2 lg:text-3xl lg:mb-6'>
+              <h1 className={`${HeaderStyles} mb-2 lg:mb-6`}>
                 Polski producent saun Infraline od prawie 20 lat.
               </h1>
 
@@ -60,9 +60,9 @@ export default function Home() {
             />
           </section>
 
-          <section>
-            <h2 className='text-4xl'>Oferta:</h2>
-            <h3>W naszej bogatej ofercie posiadamy:</h3>
+          <section className='mt-6 md:mt-12 lg:mt-16'>
+            <h2 className={`${HeaderStyles} text-center lg:mb-2`}>Oferta:</h2>
+            <h3 className='text-center'>W naszej bogatej ofercie posiadamy:</h3>
             <ul>
               <li>sauny fińskie</li>
               <li>sauny Infrared</li>

@@ -4,7 +4,7 @@ import LogoSvg from 'assets/svg/LogoSvg';
 import TelephoneSvg from 'assets/svg/TelephoneSvg';
 import Link from 'next/link';
 import ArrowSvg from 'assets/svg/ArrowSvg';
-import { WrapperStyles } from 'styles/Wrapper.styles';
+import { WrapperStyles } from 'styles/globals.styles';
 
 const StyledLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
   return (
