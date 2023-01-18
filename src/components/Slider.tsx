@@ -9,7 +9,7 @@ type TText = string | React.ReactNode;
 const SliderText = ({ heading, captions }: { heading: TText; captions?: TText }) => {
   return (
     <div className='px-4'>
-      <h2 className='text-white text-2xl md:text-4xl font-bold leading-normal mb-2'>{heading}</h2>
+      <h2 className='text-white text-2xl md:text-4xl font-bold mb-2 md:mb-4'>{heading}</h2>
       <p className='text-white text-xl md:text-2xl'>{captions}</p>
     </div>
   );
@@ -22,7 +22,7 @@ const slideImages = [
       <SliderText
         heading={
           <>
-            Sauny Fińskie - Infrared - Combi <br /> Infraline
+            Sauny Fińskie - Infrared - Combi <span className='block mt-2'>Infraline</span>
           </>
         }
         captions='Projekt - Produkcja - Montaż'
