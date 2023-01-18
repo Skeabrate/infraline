@@ -82,7 +82,7 @@ const Slider = () => {
           key={index}
         >
           <div
-            className='w-full h-[250px] sm:h-[400px] md:h-[500px] lg:h-[60vh] lg:min-h-[500px] bg-orange-600 flex flex-col text-center items-center justify-center bg-no-repeat bg-center bg-cover'
+            className='w-full h-[250px] sm:h-[400px] md:h-[500px] lg:h-[70vh] lg:min-h-[500px] bg-orange-600 flex flex-col text-center items-center justify-center bg-no-repeat bg-center bg-cover'
             style={{ backgroundImage: `url(${url})` }}
           >
             {sliderText}
